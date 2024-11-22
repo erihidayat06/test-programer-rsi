@@ -10,7 +10,7 @@
              </a>
          </li><!-- End Dashboard Nav -->
          <li class="nav-item">
-             <a class="nav-link {{ Request::is('todos') ? '' : 'collapsed' }}" href="/todos">
+             <a class="nav-link {{ Request::is('todos*') ? '' : 'collapsed' }}" href="/todos">
                  <i class="bi bi-card-list"></i>
                  <span>Todos</span>
              </a>

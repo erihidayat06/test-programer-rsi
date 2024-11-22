@@ -43,9 +43,9 @@
                 @enderror
                 <label for="status" class="form-label mt-3">Status</label>
                 <select class="form-select" aria-label="Default select example" id="status" name="status">
-                    <option value="belum" {{ old('status') == 'belum' ? 'selected' : '' }}>Belum</option>
-                    <option value="sedang" {{ old('status') == 'sedang' ? 'selected' : '' }}>Sedang</option>
-                    <option value="sudah" {{ old('status') == 'sudah' ? 'selected' : '' }}>Sudah</option>
+                    <option value="belum" {{ old('status', $todo) == 'belum' ? 'selected' : '' }}>Belum</option>
+                    <option value="sedang" {{ old('status', $todo) == 'sedang' ? 'selected' : '' }}>Sedang</option>
+                    <option value="sudah" {{ old('status', $todo) == 'sudah' ? 'selected' : '' }}>Sudah</option>
                 </select>
 
                 @error('status')

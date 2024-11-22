@@ -34,11 +34,11 @@
                                         @elseif ($todo->status == 'sedang')
                                             <span class="text-warning"> {{ ucfirst($todo->status) }} </span>
                                         @elseif ($todo->status == 'sudah')
-                                            <span class="text-saccess"> {{ ucfirst($todo->status) }}</span>
+                                            <span class="text-success"> {{ ucfirst($todo->status) }}</span>
                                         @endif
                                     </td>
                                     <td>
-                                        <div class="d-flex justify-content-center">
+                                        <div class="d-flex justify-content-start">
                                             <a href="/todos/{{ $todo->id }}/edit" class="btn btn-sm btn-success"><i
                                                     class="bi bi-pencil-square"></i></a>
                                             <form action="/todos/{{ $todo->id }}" method="POST">
