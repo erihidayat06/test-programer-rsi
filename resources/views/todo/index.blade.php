@@ -39,7 +39,9 @@
                                     </td>
                                     <td>
                                         <div class="d-flex justify-content-start">
-                                            <a href="/todos/{{ $todo->id }}/edit" class="btn btn-sm btn-success"><i
+                                            <a href="/todos/{{ $todo->id }}" class="btn btn-sm btn-info"><i
+                                                    class="bi bi-eye"></i></a>
+                                            <a href="/todos/{{ $todo->id }}/edit" class="btn btn-sm btn-success ms-3"><i
                                                     class="bi bi-pencil-square"></i></a>
                                             <form action="/todos/{{ $todo->id }}" method="POST">
                                                 @csrf
